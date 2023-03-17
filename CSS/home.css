@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --backgroundcolor: white;
+    --color: black;
+
+    --small: 20px;
+    --midium: 30px;
+    --big: 35px
+}
+.theme{
+    --backgroundcolor: black;
+    --color: white;
+}
+.hero-container{
+    height: 100vh;
+    color: var(--color);
+    background: var(--backgroundcolor);
+    transition: 1s all;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+.main{
+    margin-left: 50px;
+}
+.main h1{
+    font-size: var(--big);
+}
+.main h3{
+    font-size: var(--midium);
+}
+.main p{
+    font-size: var(--small);
+}
+.main button{
+    padding: 8px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: .5s;
+    background: transparent;
+}
+.main button:hover{
+    transform: translate(5px)
+}
+.main button a{
+    text-decoration: none;
+    color: var(--color);
+}
+.hero-background{
+    width: 32rem;
+    animation: floate 5s infinite linear;
+}
+@keyframes floate {
+        0%{
+         transform: translate(0, 0);
+        }
+        50%{
+         transform: translate(0, 10px);
+        }
+        100%{
+         transform: translate(0, 0);
+        }
+}

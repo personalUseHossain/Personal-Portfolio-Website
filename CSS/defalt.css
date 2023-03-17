@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root{
+    --backgroundcolor: white;
+    --color: black;
+    
+}
+.theme{
+    --backgroundcolor: black;
+    --color: white;
+} 
+body{
+    transition: 1s all;
+    background: var(--backgroundcolor);
+}
+
+/************************************************* Navigation Bar  *******************************************************/
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    height: 6rem;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color);
+    letter-spacing: 2px;
+}
+.logo i span{
+    color: red;
+}
+.menu ul{
+    justify-self: end;
+    display: flex;
+    gap: 2rem;
+    transition: 1s all;
+    margin-top: 10px;
+}
+nav ul li{
+    list-style: none;
+    height: 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    transition: .5s;
+    color: var(--color);
+}
+nav ul li a:hover{
+    color: cyan;
+}
+/************* Icons  **************/
+.icon{
+    width: 4rem;
+    margin-right: 2rem;
+}
+i{
+    cursor: pointer;
+    color: var(--color);
+}
+.fa-moon{
+    font-size: 25px;
+    margin-top: 5px;
+}
+.active{
+    border-bottom: 2px solid var(--color);
+}
+.fa-bars{
+    display: none !important;
+}
+
+.fa-sun{
+     position: relative;
+    margin-top: 12px;
+    font-size: 26px; 
+}
+/************* Icons  **************/
+
+
+/************* Break Points for Navigation Bar  **************/
+@media (width < 707px) {
+    nav{
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: column;
+        position: fixed;
+        top: 5em;
+        width: 100vw;
+        right: -100%;
+        text-align: center;
+        background: var(--backgroundcolor);
+        height: 100vh; 
+    }
+    nav ul li{
+        margin-top: 1rem;
+    }
+    nav ul li:first-child{
+        margin-top: 5rem;
+    }
+    
+    .logo h1{
+        font-size: 20px;
+    }
+    /************* Icons  **************/
+    .fa-bars{
+        display: block !important;
+        font-size: 25px;
+        margin-right: 15px;
+        position: absolute;
+        top: 2.3rem;
+        right: 6rem;
+    }
+    .fa-xmark{
+        font-size: 29px;
+        margin-right: 15px;
+        position: absolute;
+        top: 2.2rem;
+        right: 6rem;
+    }
+    .fa-moon{
+        position: absolute;
+        bottom: 8px;
+        display: block !important;
+        right: 3rem;
+        top: 2rem;
+    }
+    .fa-sun{
+        font-size: 26px; 
+        position: absolute;
+        bottom: 8px;
+        display: block !important;
+        right: 3rem;
+        top: 1.5rem;
+    }
+   
+    /************* Icons  **************/
+}
+/************* Break Points for Navigation Bar  **************/
+
+
+
+/************************************************ Navigation Bar  *****************************************************/
+
+
+
+
+
+
+/************************************************ Footer Section  *****************************************************/
+
+.footer{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    height: 30vh;
+    width: 105vw;
+    color: var(--color);
+}
+.footer li{
+    list-style: none;
+    padding: 10px;
+    transition: .5s all;
+}
+.footer ul li:hover{
+    transform: translateX(5px);
+}
+.footer a{
+    text-decoration: none;
+    color: var(--color);
+}
+.grid-container{
+    width: 20vw;
+}
+.links{
+    text-align: center;
+}
+.footer-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+}
+.links i{
+    font-size: 20px;
+    margin: 10px 10px;
+    transition: .2s;
+}
+.links i:hover{
+    color: cyan;
+    transform: scale(1.1);
+}
+.copyright{
+    text-align: center;
+    margin: 50px;
+    color: var(--color)
+}
+
+/************* Break Points for Footer Section  **************/
+@media (width < 1030px) {
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        row-gap: 2rem;
+        padding: 20px;
+    }
+    .links{
+        margin-right: 5rem;
+    }
+
+}
+
+@media (width < 808px) {
+    .footer{
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+        padding: 50px 0;
+    }
+    .grid-container{
+        width: 11rem;
+    }
+    .links{
+        margin-right: 3rem;
+    }
+
+}
+
+/************* Break Points for Footer Section  **************/
+
+
+/************************************************ Footer Section  *****************************************************/
+
+
+
+
+

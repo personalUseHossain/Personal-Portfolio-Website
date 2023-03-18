@@ -40,7 +40,7 @@ themeIcon.addEventListener("click", Changetheme);
 
 // Intersection Observer
 
-let observertop = new IntersectionObserver(
+let observer = new IntersectionObserver(
   (el) => {
     el.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -58,6 +58,26 @@ let observertop = new IntersectionObserver(
 
 let allhidden = document.querySelectorAll(".hidden");
 
-allhidden.forEach((el) => observertop.observe(el));
+allhidden.forEach((el) => observer.observe(el));
+
+let topObserver = new IntersectionObserver(
+  (el) => {
+    el.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show-top");
+      }
+      //  else {
+      //   entry.target.classList.remove("show");
+      // }
+    });
+  },
+  {
+    threshold: 0.4,
+  }
+);
+
+let tophidden = document.querySelectorAll(".tophidden");
+
+tophidden.forEach((el) => topObserver.observe(el));
 
 // Intersection Observer

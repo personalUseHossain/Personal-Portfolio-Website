@@ -254,6 +254,15 @@ i{
     .show{
        transform: scale(1);
     }
+    .tophidden{
+        transition: 1s;
+        filter: blur(5px);
+        transform: translateX(-50%);
+    }
+    .show-top{
+        filter: blur(0);
+        transform: translateX(0);
+    }
 
 /* Intersection Observer */
 

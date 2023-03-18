@@ -138,6 +138,10 @@
 }
 .service-img{
     width: 14rem;
+    transition: .5s;
+}
+.service-item:hover + .service-img{
+    width: 15rem;
 }
 .service-item p{
     width: 15rem;
@@ -154,6 +158,12 @@
     .item-container{
         flex-direction: column;
         gap: 5rem;
+    }
+    .service-bottom .item-2{
+        transition-delay: 0ms;
+    }
+    .service-bottom .item-3{
+        transition-delay: 0ms;
     }
     
 }

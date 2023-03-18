@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Personal Portfolio Website | A website that tell about Hossain
-    </title>
-    <!------------------------- Linking CSS and JS file ---------------------------------->
-    <link rel="stylesheet" href="../CSS/home.css" />
+    <title>About | Personal Portfolio Website |</title>
     <link rel="stylesheet" href="../CSS/defalt.css" />
-    <script defer src="../JavaScript/defalt.js"></script>
-    <script defer src="../JavaScript/home.js"></script>
+    <link rel="stylesheet" href="../CSS/about.css" />
   </head>
   <body>
     <!------------------------- Navigaiton Starts ---------------------------------->
@@ -26,9 +21,9 @@
       <i class="fa-solid fa-moon"></i>
       <div class="menu">
         <ul>
-          <li><a class="active home" href="">Home</a></li>
-          <li><a href="./service.html">Services</a></li>
-          <li><a href="../HTML/about.html">About</a></li>
+          <li><a href="../HTML/index.html">Home</a></li>
+          <li><a href="../HTML/service.html">Services</a></li>
+          <li><a class="active" href="../HTML/about.html">About</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </div>
@@ -36,28 +31,63 @@
 
     <!------------------------- Navigaiton Starts ---------------------------------->
 
-    <!------------------------- Hero Section Starts ---------------------------------->
+    <!------------------------- About Section Starts ---------------------------------->
 
-    <section class="hero-container">
-      <div class="main hidden">
-        <h3>BETTER SOLUTIONS FOR</h3>
-        <h1>YOUR BUSINESS</h1>
+    <!-------------- About-top  ------------------>
+    <section class="about-container">
+      <div class="about-left tophidden">
+        <h1>
+          I build <span>relationship</span> <br />
+          more than <span>product</span>
+        </h1>
         <p>
-          We are team of talanted designers making <br />
-          cool wesbite for you.
+          IT involves computers, software, and networks to manage data. IT
+          professionals work in software development, network management, and
+          more. Strong technical skills are essential.
         </p>
-        <button><a href="">Learn more</a></button>
       </div>
-      <div class="background"></div>
-      <img
-        class="hero-background"
-        src="../Images/html-removebg-preview.png"
-        alt="404 Not found"
-      />
+      <div class="about-background-top">
+        <img
+          class="hidden"
+          src="../Images/About/cartoon image meetup.png"
+          alt="404 image not found"
+        />
+      </div>
     </section>
-
-    <!------------------------- Hero Section Starts ---------------------------------->
-    <hr style="color: var(--color)" />
+    <!-------------- About-top  ------------------>
+    <hr style="color: var(--backgroundcolor)" />
+    <!-------------- About-bottom  ------------------>
+    <h1
+      style="
+        text-align: center;
+        width: 100vw;
+        margin: 50px 0 0 0;
+        color: var(--color);
+      "
+    >
+      ABOUT ME
+    </h1>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>
+          Hello there! <br />
+          I am Hossain
+        </h2>
+        <h1>I am a <span id="typewriter">Developer</span></h1>
+        <p>
+          I am a boy from a small country called Bangladesh. I live here since I
+          was born. Now I read in a government polytecniq institute on Computer
+          Science and Tecnology subject at......
+        </p>
+        <button>Read More</button>
+      </div>
+      <div class="about-me-background">
+        <img src="../Images/About/nobackgroun.png" alt="404 image not found" />
+      </div>
+    </div>
+    <!-------------- About-bottom  ------------------>
+    <hr style="color: var(--backgroundcolor)" />
+    <!------------------------- About Section Ends ---------------------------------->
     <!------------------------- Footer Starts ---------------------------------->
     <section class="footer">
       <div class="grid-container text">
@@ -96,6 +126,7 @@
     </p>
     <!------------------------- Footer Starts ---------------------------------->
 
+    <script src="../JavaScript/defalt.js"></script>
     <script
       src="https://kit.fontawesome.com/59ef65778e.js"
       crossorigin="anonymous"

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*********************************** Service top Section ****************************************/
+.service-container{
+    height: 77vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--backgroundcolor);
+    color: var(--color);
+    transition: .5s;
+    margin-top: 15vh;
+    letter-spacing: 2px;
+}
+.service-text{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+.service-container .left{
+    width: 25rem;
+  
+}
+.service-container .left h1{
+    font-size: 30px;
+}
+.service-container .left p{
+    font-size: 21px;
+    margin: 8px 0 5px 0;
+}
+.service-container .left button{
+    padding: 8px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    transition: .5s;
+    color: var(--color);
+    background: var(--backgroundcolor);
+    font-size: 16px;
+    border: 2px solid var(--color);
+    transition: .5s;
+    
+}
+.service-container .left button:hover{
+    transform: scale(1.04) translate(2px);
+   
+}
+.service-background img{
+    width: 20rem;
+}
+/********************* Break Points for Service top section ********************/
+
+@media (width < 972px) {
+    .service-container{
+        height: 100%;
+    }
+    .service-text{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px 0;
+        gap: 5rem;
+    }
+    .service-container .left{
+        width: 45vw;
+    }
+}
+@media (width < 479px) {
+    .service-background img{
+        width: 15rem;
+    }
+}
+/********************* Break Points for Service top section ********************/
+
+
+/*********************************** Service top Section ****************************************/
+
+
+
+/*********************************** Service bottom Section ****************************************/
+
+.service-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0;
+    color: var(--color);
+    background: var(--backgroundcolor);
+    transition: .5s;
+    letter-spacing: 2px;
+}
+.item-container{
+    display: flex;
+    gap: 2rem;
+    margin: 50px 0;
+}
+.service-item{
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--backgroundcolor);
+    flex-direction: column;
+    gap: 1rem;
+    transition: .5s;
+    padding: 30px;
+    border-radius: 9px;
+}
+.service-item:hover{
+    border: 1px solid var(--color);
+}
+.service-item button{
+    padding: 7px;
+    border-radius: 6px;
+    border: 2px solid var(--color);
+    background: var(--backgroundcolor);
+    transition: .5s;
+    color: var(--color);
+}
+.service-item button:hover{
+    transform: scale(1.02) translate(2px);
+}
+.service-img{
+    width: 14rem;
+}
+.service-item p{
+    width: 15rem;
+}
+.service-top-p{
+    padding: 0 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/********************* Break Points for Service bottom section ********************/
+
+@media (width < 1200px) {
+    .item-container{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+}
+
+
+/********************* Break Points for Service bottom section ********************/
+
+
+
+/*********************************** Service bottom Section ****************************************/

@@ -37,3 +37,27 @@ function Changetheme() {
 
 // Calling function to change color of theme when click to themeIcon
 themeIcon.addEventListener("click", Changetheme);
+
+// Intersection Observer
+
+let observertop = new IntersectionObserver(
+  (el) => {
+    el.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+      //  else {
+      //   entry.target.classList.remove("show");
+      // }
+    });
+  },
+  {
+    threshold: 0.4,
+  }
+);
+
+let allhidden = document.querySelectorAll(".hidden");
+
+allhidden.forEach((el) => observertop.observe(el));
+
+// Intersection Observer

@@ -14,16 +14,22 @@
     --color: white;
 } 
 body{
-    transition: 1s all;
+    transition: .5s all;
     background: var(--backgroundcolor);
 }
 
 /************************************************* Navigation Bar  *******************************************************/
 nav{
+    inset: 0;
+    top: -5px;
     display: flex;
     justify-content: space-evenly;
     height: 6rem;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    background: var(--backgroundcolor);
+    transition: .5s;
 }
 .logo{
     display: flex;
@@ -38,7 +44,7 @@ nav{
     justify-self: end;
     display: flex;
     gap: 2rem;
-    transition: 1s all;
+    transition: .5s all;
     margin-top: 10px;
 }
 nav ul li{
@@ -85,6 +91,8 @@ i{
 @media (width < 707px) {
     nav{
         justify-content: space-around;
+        background: var(--backgroundcolor);
+        transition: .5s;
     }
     nav ul{
         flex-direction: column;
@@ -95,6 +103,7 @@ i{
         text-align: center;
         background: var(--backgroundcolor);
         height: 100vh; 
+        z-index: 100;
     }
     nav ul li{
         margin-top: 1rem;
@@ -160,6 +169,7 @@ i{
     height: 30vh;
     width: 105vw;
     color: var(--color);
+    padding: 0 100px;
 }
 .footer li{
     list-style: none;

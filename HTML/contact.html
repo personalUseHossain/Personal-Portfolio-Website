@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Personal Portfolio Website | A website that tell about Hossain
-    </title>
-    <!------------------------- Linking CSS and JS file ---------------------------------->
-    <link rel="stylesheet" href="../CSS/home.css" />
+    <title>Contact | Personal Portfolio Website</title>
     <link rel="stylesheet" href="../CSS/defalt.css" />
-    <script defer src="../JavaScript/defalt.js"></script>
-    <script defer src="../JavaScript/home.js"></script>
+    <link rel="stylesheet" href="../CSS/contact.css" />
   </head>
   <body>
     <!------------------------- Navigaiton Starts ---------------------------------->
@@ -26,37 +21,54 @@
       <i class="fa-solid fa-moon"></i>
       <div class="menu">
         <ul>
-          <li><a class="active home" href="">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./service.html">Services</a></li>
           <li><a href="../HTML/about.html">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a class="active" href="./contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <!------------------------- Navigaiton Starts ---------------------------------->
 
-    <!------------------------- Hero Section Starts ---------------------------------->
+    <!------------------------- Contact Section Starts ---------------------------------->
 
-    <section class="hero-container">
-      <div class="main tophidden">
-        <h3>BETTER SOLUTIONS FOR</h3>
-        <h1>YOUR BUSINESS</h1>
+    <section class="contact-top">
+      <div class="text-top-contact tophidden">
+        <h1>
+          <i class="fa-solid fa-code"><span style="color: red">CO</span>DER</i>
+        </h1>
         <p>
-          We are team of talanted designers making <br />
-          cool wesbite for you.
+          261/2-C South Pirerbag, <br />
+          Oli market road, Dhaka Bangladesh
         </p>
-        <button><a href="">Learn more</a></button>
+        <p><b>Phone</b>: +0880161822501, +0880195363365</p>
       </div>
-      <div class="background"></div>
-      <img
-        class="hero-background"
-        src="../Images/html-removebg-preview.png"
-        alt="404 Not found"
-      />
+
+      <div class="text-bottom-contact hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d638.4403462695536!2d90.36787977057882!3d23.786861945067795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1679220234450!5m2!1sen!2sbd"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+      </div>
     </section>
 
-    <!------------------------- Hero Section Starts ---------------------------------->
+    <hr style="color: var(--color)" />
+
+    <section class="contact-bottom">
+      <h1 class="tophidden">Contact Form</h1>
+      <div class="inputs">
+        <input type="text" placeholder="Enter your name..." />
+        <input type="Email" placeholder="Enter your email..." />
+        <input type="text" placeholder="Enter your message..." />
+      </div>
+      <button class="hidden">Submit</button>
+    </section>
+
+    <!------------------------- Contact Section Starts ---------------------------------->
     <hr style="color: var(--color)" />
     <!------------------------- Footer Starts ---------------------------------->
     <section class="footer">
@@ -96,6 +108,7 @@
     </p>
     <!------------------------- Footer Starts ---------------------------------->
 
+    <script src="../JavaScript/defalt.js"></script>
     <script
       src="https://kit.fontawesome.com/59ef65778e.js"
       crossorigin="anonymous"

@@ -26,7 +26,6 @@
     align-items: center;
     margin: 10rem 0 50px 0;
     letter-spacing: 2px;
-
 }
 .main{
     margin-left: 50px;
@@ -79,9 +78,10 @@
 @media (width < 1106px) {
     .hero-container{
         flex-direction: column-reverse;  
-        margin: 100px 0;
+        margin: 150px 0;
         height: 100%;
         gap: 2rem;
+
     }
     .main{
         height: 29vh;

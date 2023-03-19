@@ -13,6 +13,9 @@
     --backgroundcolor: black;
     --color: white;
 } 
+button, a, i{
+   cursor: pointer;
+}
 body{
     transition: .5s all;
     background: var(--backgroundcolor);

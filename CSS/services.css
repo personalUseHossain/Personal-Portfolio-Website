@@ -43,9 +43,9 @@
     transition: .5s;
     
 }
-.service-container .left button:hover{
-    transform: scale(1.04) translate(2px);
-   
+
+.service-background{
+    transition-delay: 700ms;
 }
 .service-background img{
     width: 20rem;
@@ -122,9 +122,7 @@
     padding: 30px;
     border-radius: 9px;
 }
-.service-item:hover{
-    border: 1px solid var(--color);
-}
+
 .service-item button{
     padding: 7px;
     border-radius: 6px;
@@ -140,9 +138,7 @@
     width: 14rem;
     transition: .5s;
 }
-.service-item:hover + .service-img{
-    width: 15rem;
-}
+
 .service-item p{
     width: 15rem;
 }

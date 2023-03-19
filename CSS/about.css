@@ -93,9 +93,46 @@
     transform: scale(1.02) translateX(5px);
 
 }
+.typewriter{
+}
+.typewriter:before{
+    background: var(--backgroundcolor);
+    content: '';
+    height: 2rem;
+    width: 37%;
+    position: absolute;
+    top: 5px;
+    transition: .5s;
+    animation: typewriter steps(12) 4s infinite;
+}
+
+/************* Animation typewriter effect **************/
+
+@keyframes typewriter{
+    0%{
+        right: -1rem;
+    }
+    50%{
+        right: 10rem;
+    }
+    100%{
+        right: -1rem;
+    }
+}
+
+/************* Animation typewriter effect **************/
+
 /************* Break Points for About-bottom Section  **************/
 
-
+@media (width < 882px) {
+    .about-me{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .about-me-text{
+        width: 55vw;
+    }
+}
 
 /************* Break Points for About-bottom Section  **************/
 
